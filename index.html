@@ -1,11 +1,502 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
-  <meta name="generator" content="PSPad editor, www.pspad.com">
-  <title></title>
-  </head>
-  <body>
-	<meta http-equiv="refresh" content="1;url=https://bitbucket.org/YuniControl/yunicontrol_xmega32a4u_board">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>YuniControl - Univerzální řídící pult</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Le styles -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<style>
+			  body {
+				padding-top: 30px; /* 60px to make the container go all the way to the bottom of the topbar */
+			  }
+		</style>
+
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+		<script type='text/javascript' src='js/my.js'></script>
+	</head>
+	<body>
+    
+    <div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" style="cursor: pointer;" onclick="do_scroll('#content');"> </a>
+				<div class="nav-collapse" id="menu_neco">
+					<ul class="nav">
+						<li><a style="cursor: pointer;" onclick="do_scroll('#about');">O projektu</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#construction');">Konstrukce</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#electronics');">Elektronika</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#software');">Software</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#benefits');">Výhody</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#utilize');">Využití</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#contribution');">Přínosy</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#competitions');">Soutěže</a></li>
+						<!--
+						<li><a style="cursor: pointer;" onclick="do_scroll('#thanks');">Poděkování</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#links');">Zajímavé odkazy</a></li>
+						<li><a style="cursor: pointer;" onclick="do_scroll('#aboutme');">O mně</a></li>
+						-->
+						<li style="margin-left: 50px"><a href="index.html">..</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+    </div>    
+    <div style="margin-top: 30px" class="container" id="content">
+        <h1>YuniControl</h1>
+        <p>
+        	Cílem této práce bylo vytvořit univerzální dálkový ovládací pult, který se od běžně dostupných ovladačů liší tím, že umožňuje uživateli rozmístit si libovolně a v téměř neomezeném množství ovládací prvky.
+        </p>
+		<hr>
+		
+		<h3 id="about">O projektu</h3>
+		<p>
+			Tuto práci jsem vytvořil, protože se již delší dobu zabývám modelařinou a robotikou a řešil jsem komplikace s ovládáním. Dostupné produkty mě neuspokojovali, neumožňovali to co jsem potřeboval, jejich řešení bylo velmi složité a nebo byli mimo mé finanční možnosti. Proto jsem se rozhodl, že vyrobím univerzální ovladač.
+		</p>
+		<p>
+			Vytvořil jsem variabilní konstrukci za pomocí jednotlivých modulů sloužících k ovládání. K tomuto řešení jsem došel po navrhnutí několika konstrukcí, po hodinách prodebatovaných s lidmi, kteří měli podobné problémy a také po testování jednotlivých variant.
+		</p>
+		<p>	
+			Nyní mám ovládací pult, do kterého mohu zakomponovat jednotlivé ovládací prvky (křížové ovladače, potenciometry, přepínače, tlačítka atd.) a poskládat si je tedy podle svého využití, v množství jakém budu potřebovat a případně snadno přidat další prvky. 
+		</p>
+		<p>
+			Tento univerzální ovladač lze využít k ovládání složitějších robotů, modelů letadel, lodí, dopravní techniky nebo stavebních strojů. Také by bylo možné uvažovat o použití v průmyslu pro manipulátory a jeřáby nebo pro měřící či CNC centra.
+		</p>
+		<p>
+			Hlavním přínosem mojí práce je možnost sestavit si ovladač podle potřeby, vyzkoušet si jiné uspořádání, přidat nové funkce a také cena, která by měla být nižší než v případě některých komerčních produktů.
+		</p>
+
+		<hr>
+		<h3 id="construction">Konstrukce</h3>
+		<p>
+		   Ovladač se skládá z obalu a jednotlivých ovládacích modulů. Moduly jsou upevněny pomocí magnetů a jejich poloha je zajištěna technickou pěnou, která také zajišťuje krytí elektroniky.
+		</p>
+		<h4>Ovládací pult</h4>
+		<p style="margin-left: 30px">
+			Konstrukce se skládá z ovládacího pultu a modulů. Ovládací pult slouží jako nosná konstrukce pro všechny moduly. Modulem mohou být všechny ovládací prvky od křížových ovladačů, přes přepínače až po potenciometry. Ale také se může jednat o modul s 2,4 GHz vysílačem, informačním reproduktorem, stavovým displejem, smartphonem, správou napájení nebo GPS či bluetooth čipem.
+		</p>
+		<p style="margin-left: 30px"> 
+			Pult je vyroben z překližky o tloušťce 6 mm. Vnější rozměry pultu jsou přibližně 410 x 250 mm. Výška pultu je cca. 50 mm. Uvnitř pultu je umístěn pozinkový plech o rozměrech 400 x 240 mm. Veškeré moduly se připevňují na tento pozinkový plech.
+		</p>
+		<p style="margin-left: 30px">
+			Do nevyplněného prostoru se umísťují výplně vyrobené z tvrdé technické pěny o výšce 20 mm. Jejich rozměry jsou různé. Dají se skládat na sebe (tím mají výšku jako moduly), nebo je mohu pokládat na spojovací kolíčky a tím si vytvořit podlahu.
+		</p>
+
+		<h4>Moduly</h4>
+		<p style="margin-left: 30px">
+			Jsou vyrobeny moduly pro ovládání (moduly s křížovými ovladači, přepínači a potenciometry). Dále je vyroben modul pro smartphone a pro 2,4 Ghz modul.
+		</p>
+		<p style="margin-left: 30px">
+			Všechny moduly jsou vyrobeny z hliníku o tloušťce 2,5 mm. Výška každého modulu je 41 mm. Přichytávají se pomocí neodymových magnetů k pozinkovému plechu, který je umístěn na dně ovládacího pultu. Každý modul na sobě má několik uchytávacích zámků, sloužících za prvé k jejich spojování mezi sebou a za druhé k umisťování zakrývací výplně.
+		</p>
+		<p style="margin-left: 30px">
+			Ke spojování modulů mám vyrobených několik kolíčků, které jsou ze dřeva a tzv. moduly mezi sebou.
+		</p>
+
+
+		<hr>
+		<h3 id="electronics">Elektronika</h3>
+		<p>
+		Do ovladače jsem si vytvořil vlastní elektroniku. Díky tomu mohu snímat hodnoty ze všech ovládacích prvků, komunikovat s dalšími zařízeními a upravovat software.
+		</p>
+		<p>
+		Elektroniku  si můžete stáhnout z repozitáře: <a href="https://bitbucket.org/YuniControl/yunicontrol_xmega32a4u_board">yunicontrol_xmega32a4u_board</a>.
+		</p>
+		<h4>Popis</h4>
+		<p style="margin-left: 30px">
+			Srdcem celého ovladače je řídící deska postavená na nové architektuře firmy Atmel. Jedná se o platformu <a href="http://www.atmel.com/products/microcontrollers/avr/avr_xmega.aspx">AVR Xmega</a>, která je nástupcem starší rodiny ATMega. 
+		</p>
+		<p style="margin-left: 30px">	
+			Konkrétně se jedná o čip <a href="http://www.atmel.com/devices/ATXMEGA32A4U.aspx">ATxmega32A4U</a>.
+			 <ul style="margin-left: 50px">
+				<li style="padding: 2px">8/16-bit AVR XMEGA A4U Microcontroller</li>
+				<li style="padding: 2px">32KB Flash</li>
+				<li style="padding: 2px">44-pin</li>
+				<li style="padding: 2px">32 MHz max. operating frequency:</li>
+				<li style="padding: 2px">USB Full-speed Device</li>
+			</ul>
+		</p>
+
+		<p style="margin-left: 30px">	
+			Řídící deska je vyvinuta tak, aby zastala základní funkce zcela samostatně. K jednoduchému řízení letadla či robota stačí jen tato deska. Až v případě, že by měl uživatel zájem o další funkce, může přidávat další tyto desky a vzájemně je propojovat. 
+		</p>
+		<p style="margin-left: 30px">	
+			Deska obsahuje micro-USB konektor, díky kterému je možné nahrávat nové verze softwaru bez jakéhokoliv programátoru a zároveň umožňuje komunikaci mezi PC a deskou pro případné předávaní dat a nastavování.
+		</p>
+		<h4>Licence</h4>
+		<p style="margin-left: 30px">	
+			Elektronika je volně k dispozici pod licencí <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commont Attribution 3.0 Unported</a>. 
+		</p>
+
+		
+		
+		<hr>
+		<h3 id="software">Software</h3>
+		<p>
+		V řídící desce YuniControl mám vlastní software (viz popis níže). K dispozici je i aplikace od <a href="http://tasssadar.github.io/">Vojty Bočka</a> na Android, která momentálně umožňuje zobrazování dat z elektroniky.
+		</p>
+		<h4>Řídící deska YuniControl</h4>
+		<p style="margin-left: 30px">
+			Software je psán v prostředí <a href="http://www.atmel.com/microsite/atmel_studio6/">Atmel Studio 6</a>. K obsluze používám knihovny <a href="https://technika.junior.cz/hg/avrlib">avrlib</a> od <a href="https://bitbucket.org/avakar/">Martina Vejnára</a>, které můžu s jeho souhlasem používat a dále šířit. Tímto bych mu chtěl také poděkovat za poskytnutí knihoven.
+		</p>
+		<p style="margin-left: 30px">
+			Aktuální uveřejněnou verzi softwaru naleznete v tomto repozitáři: <a href="https://technika.junior.cz/trac/browser/yunicontrol_xmega32a4u_firmware">yunicontrol_xmega32a4u_firmware</a>.
+		</p>
+		
+		<p style="margin-left: 30px">
+			Současně k software vyvíjím knihovny pro lepší, jednodušší a pochopitelnější práci s řídící deskou: <a href="https://jarekp@bitbucket.org/YuniControl/yunicontrol_lib">yunicontrol_lib</a>.
+		</p>
+				
+		<p style="margin-left: 30px">	
+			Momentálně software zvládá tyto úlohy:</a>.
+			 <ul style="margin-left: 50px">
+				<li style="padding: 2px">snímání polohy potenciometrů (křížových ovladačů), přepínačů a tlačítek</li>
+				<li style="padding: 2px">komunikace po sériové lince</li>
+				<li style="padding: 2px">obsluhu bluetooth modulů ConnectBlue</li>
+				<li style="padding: 2px">odesílání dat do mobilní aplikace Lorris mobile</li>
+				<li style="padding: 2px">vytváření PPM signálu</li>
+			</ul>
+		</p>
+		
+		<p style="margin-left: 30px">	
+			Ve vývoji jsou další funkce:</a>.
+			 <ul style="margin-left: 50px">
+				<li style="padding: 2px">automatická kalibrace polohy potenciometrů (kvůli křížovým ovladačům)</li>
+				<li style="padding: 2px">nastavování bluetooth modulů z aplikace Lorris mobile</li>
+				<li style="padding: 2px">obsluha elektroniky pomocí PC aplikace</li>
+			</ul>
+		</p>
+				
+		</p>
+		<h4>Android aplikace</h4>
+		<p style="margin-left: 30px">
+			Aplikaci pro mobilní telefony s operačním systémem Android mi vytvořil Vojta Boček. Jedná se spíše o modul do aplikace <a href="https://play.google.com/store/apps/details?id=com.tassadar.lorrismobile">Lorris mobile</a> což je soubor nástrojů, které pomáhají při vývoji robotů, embedded zařízení a všeho ostatního co posílá a přijímá data. 
+		</p>
+		<p style="margin-left: 30px">
+			Modul YuniControl v aplikaci Lorris mobile zvládá tyto úlohy:
+			<ul style="margin-left: 50px">
+				<li style="padding: 2px">zobrazování polohy/pozice jednotlivých ovládacích prvků (potenciometrů, tlačítek, přepínačů)</li>
+				<li style="padding: 2px">informovat o napájecím napětí</li>
+				<li style="padding: 2px">spouštět kalibrační mód v řídící elektronice</li>
+			</ul>
+		</p>
+		<p style="margin-left: 30px">
+			Další funkce by měli časem přibývat.
+		</p>
+
+		
+		
+			
+		<hr>
+		<h3 id="benefits">Výhody</h3>
+		<p>
+		Hlavní předností univerzálního ovládacího pultu, která jej zcela odlišuje od běžných dálkových ovladačů, je možnost skládat do něj jednotlivé ovládací moduly ve stylu stavebnice Lego.
+		</p>
+		<p>
+		Jednoduše je tedy možné vzít ovládací prvek (typu tlačítko, přepínač nebo pákový ovladač) a umístit ho podle potřeby kamkoliv a vytvořit si tak ovladač přesně na míru, například pro složitý model trolejbusu.
+		</p>
+				
+		
+				
+		<hr>
+		<h3 id="utilize">Využití</h3>
+		<p>
+		Pult je vhodný pro testování různých způsobů uspořádání ovladačů a umožňuje vytváření zcela nových ovládacích zařízení, která zatím nikdo nevyrábí.
+		</p>
+		<p>
+		Zvlášť vhodný je pro aplikace, kde je pro uživatele nezbytné mít k dispozici větší množství ovládacích prvků a tyto ovládací prvky mít speciálně rozmístěny, například kvůli přesnému a rychlému ovládání
+		</p>
+		
+		
+
+		<hr>
+		<h3 id="contribution">Přínosy</h3>
+		<p>
+		Neexistuje běžně dostupné zařízení, které by umožňovalo něco podobného jako tento ovladač.  
+		</p>
+		<p>
+		Koncept ovladače vyvinutého při této práci by měl sloužit pro zakázkovou výrobu ovladačů určených uživatelům s velmi specifickými požadavky.
+		</p>
+		
+		
+		
+		<hr>
+		<h3 id="competition">Soutěže</h3>
+		<p>
+		S tímto projektem jsem se zúčastnil několika soutěží ať již jako prezentaci samotné práce nebo při využití zařízení, která byla při práci vyvinuta.
+		</p>
+		<p>
+		Soupis jednotlivých soutěží i s výsledky a s odkazy na dokumentaci naleznete níže.
+		</p>
+		
+		<h4>Eurobot Starter 2011</h4>
+		<p style="margin-left: 30px">
+			V roce 2011 jsem se se svým týmem zúčastnil celostátní soutěže Eurobot Starter v Praze, kde jsme s našim robotem (jmenoval se Chessbot) i díky přesnému a rychlému ovládání, vytvořeném v rámci tohoto projektu, vyhráli 1. místo.
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://www.eurobot.cz/eurobot2011.php">Výsledky za rok 2011 (robot Chessbot)</a>
+		</p>
+		
+		
+		<h4>Bear Rescue Beginner 2012 a 2013</h4>
+		<p style="margin-left: 30px">
+			Jelikož soutěž Eurobot Starter zanikla, přešli jsem na soutěž Bear Rescue Beginner, která se také konala v Praze v rámci Robotického dne 2012/2013. 
+		</p>
+		<p style="margin-left: 30px">
+			V roce 2012 jsme po napínavém finálovém zápase skončili druzí, avšak o rok později, v roce 2013, jsme s novým týmem znovu dosáhli na absolutní vítězství.
+		</p>
+		<p style="margin-left: 30px">
+			Velkou část úspěchu tvořilo právě naše přesné a rychlé ovládání, které bylo optimalizované na danou soutěž.
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://www.robotickyden.cz/2012/results/brb.php">Výsledky za rok 2012 (robot Chessbot)</a>
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://www.robotickyden.cz/2013/results/bb.php">Výsledky za rok 2013 (robot Xavier)</a>
+		</p>
+		
+		
+		<h4>SOČ 2011 - obor 10 - Elektrotechnika - 3. místo v krajském kole</h4>
+		<p style="margin-left: 30px">
+			Zúčastnil jsem se také soutěže Středoškolská odborná činnost, kde jsem byl poprvé v roce 2011 s první verzí univerzálního dálkového ovládacího pultu.
+		</p>
+		<p style="margin-left: 30px">	
+			V první generaci jsem vytvořil funkční prototyp, na kterém jsem odzkoušel fungování všech prvků, elektroniky a reálnou vyrobitelnost.
+		</p>
+		<p style="margin-left: 30px">	
+			S prací jsem skončil na třetím místě v krajském kole.
+		</p>
+		<p style="margin-left: 30px">	
+			Text práce: <a href="https://bitbucket.org/YuniControl/yunicontrol.bitbucket.org/downloads/paral_soc_2011_text.pdf">paral_soc_2011_text.pdf</a>
+		</p>
+		
+		<h4>SOČ 2012 - obor 10 - Elektrotechnika - 9. místo v celostátním kole </h4>
+		<p style="margin-left: 30px">
+			Následující rok jsem představoval moji druhou generaci pultu.
+		</p>
+		<p style="margin-left: 30px">	
+			Ta byla založena na konceptu ovládacích modulů, které se vkládají do obalu ovladače a mohu si jejich rozložení libovolně upravovat a měnit.
+			Hlavní změny se odehráli v oblasti elektroniky, kde jsem přešel na novou koncepci a vytvořil tak od základu úplně novou elektroniku.
+		</p>
+		<p style="margin-left: 30px">	
+			V roce 2012 jsme vyhrál 1. místo v krajském kole a postoupil jsem do celostátní přehlídky, která se ten rok konala v Kutné Hoře. V celostátním kole jsem byl devátý, ale i kvůli velmi vysoké kvalitě ostatních prací, jsem byl s výsledkem spokojen.
+		</p>
+		<p style="margin-left: 30px">	
+			Text práce: <a href="https://bitbucket.org/YuniControl/yunicontrol.bitbucket.org/downloads/paral_soc_2012_text.pdf">paral_soc_2012_text.pdf</a>
+		</p>
+		<p style="margin-left: 30px">	
+			Přílohy k práci: <a href="https://bitbucket.org/YuniControl/yunicontrol.bitbucket.org/downloads/paral_soc_2012_prilohy.rar">paral_soc_2012_prilohy.pdf</a>
+		</p>
+		
+		<h4>SOČ 2013 - obor 9 - Strojírenství - 1. místo v celostátním kole </h4>
+		<p style="margin-left: 30px">
+			Práce na projektu pokračovali dále a já jsem se ve své třetí generaci zaměřil hlavně na mechanickou stránku věci a úpravy spojené s případnou kusovou výrobou.
+		</p>
+		<p style="margin-left: 30px">	
+			Zároveň jsem se snažil doladit některé neduhy předchozí generace a představit v práci i mechanickou část, kterou jsem předtím neprezentoval.
+		</p>
+		<p style="margin-left: 30px">	
+			Tato volba se ukázala jako velmi dobrá, jelikož mechanická stránka ovládacího pultu porotce velmi zaujala a i díky rozmanitosti celé práce (zasahuje jak do strojírenství, tak i do elektroniky a programování) jsem vyhrál 1. místo v celostátním kole a dosáhl jsem tím vytouženého úspěchu. 
+		</p>
+		<p style="margin-left: 30px">	
+			Text práce: <a href="https://bitbucket.org/YuniControl/yunicontrol.bitbucket.org/downloads/paral_soc_2013_text_stroj.pdf">paral_soc_2013_text_stroj.pdf</a>
+		</p>
+		<p style="margin-left: 30px">	
+			Přílohy k práci: <a href="https://bitbucket.org/YuniControl/yunicontrol.bitbucket.org/downloads/paral_soc_2013_prilohy.rar">paral_soc_2013_prilohy.pdf</a>
+		</p>
+		
+		
+		<h4>Soutěz Mikrokontroléry letí 2012 - 1. místo v kategorii středoškoláci/jednotlivci</h4>
+		<p style="margin-left: 30px">
+			Byl jsem v soutěži "Mikrokontroléry letí". Zúčastnil jsem se prvního ročníku, který se konal v roce 2012. Soutěž probíhala pod záštitou Ústavu teoretické a experimentální elektrotechniky FEKT VUT v Brně.
+		</p>
+		<p style="margin-left: 30px">	
+			S moji prací jsem vyhrál první místo v kategorii středoškoláci/jednotlivci.
+		</p>
+		<p style="margin-left: 30px">	
+			V roce 2013 proběhl druhý ročník této soutěže, kterého jsem se již nezúčastnil. Doporučil bych každému zájemci o elektroniku a programování, aby se na tuto soutěž podíval. 
+		</p>
+		<p style="margin-left: 30px">	
+			Pro více informací navštivte <a href="http://www.utee.feec.vutbr.cz/site/iet/?q=cs/soutez-mikrokontrolery-leti">web</a> soutěže.
+		</p>
+		
+		
+
+		<hr>
+		<h3 id="thanks">Poděkování</h3>
+		<p>
+		Na závěr bych chtěl poděkovat všem, kteří mi s projektem pomáhali. 
+		</p>
+		<p>
+		Jmenovitě:
+		</p>
+		
+		<h4>Mgr. Miroslav Burda</h4>
+		<p style="margin-left: 30px">
+			Za dlouhodobé vedení mojí činnosti ať již v rámci SOČ nebo i ostatních soutěží a velké pomoci s formální stránkou mích prací.
+		</p>
+		
+		<h4>Ing. Jiří Vácha</h4>
+		<p style="margin-left: 30px">
+			Za nápady, podmětné připomínky a dlouhé diskuze spojené s technickou stránkou věci.
+		</p>
+		
+		<h4>Jakub Streit - konzultant</h4>
+		<p style="margin-left: 30px">
+			Za velkou trpělivost a pomoc při vysvětlováním a řešení jednotlivých problémů v oblasti elektroniky a programování.
+		</p>
+
+		<h4>Luděk Kučera</h4>
+		<p style="margin-left: 30px">
+			Za pomoc s návrhy lepších variant konstrukce a zároveň za výrobou některých mechanických částí.
+		</p>
+		
+		<h4>Vojta Boček</h4>
+		<p style="margin-left: 30px">
+			Za perfektní aplikaci Lorris Toolbox (viz odkaz níže), za naprogramování modulu do mobilní aplikace Lorris mobile a za pomoc při řešení některých problémů.
+		</p>
+		
+		<h4>Martin Vejnár</h4>
+		<p style="margin-left: 30px">
+			Za poskytnutí knihoven avrlib pro jednodušší práci s mikrokontroléry ATmega a ATXmega a za jeho skvělí programátor Shupito. 
+		</p>
+		
+		<h4>Ing. Jaroslav Hodál, Ph.D.</h4>
+		<p style="margin-left: 30px">
+			Za rady a připomínky k formální stránce a za čas strávený nad jednotlivými texty.
+		</p>
+		
+		<h4>Ing. Radek Šebek</h4>
+		<p style="margin-left: 30px">
+			Za kontrolu technické dokumentace k projektu.
+		</p>
+		
+		<h4>Organizace JUNIOR - Dům dětí a mládeže</h4>
+		<p style="margin-left: 30px">
+			Za poskytnutí prostoru a vybavení pro tvorbu projektů.
+		</p>
+		
+		<h4>SPŠ a VOŠ technická Brno, Sokolská 1</h4>
+		<p style="margin-left: 30px">
+			Za poskytnutí podpory, zázemí a vzdělání.
+		</p>
+		
+		<h4>Firmě Torakov, s.r.o.</h4>
+		<p style="margin-left: 30px">
+			Za naohýbání některých dílů na CNC ohraňovacím lisu.
+		</p>
+		
+		<h4>Firmě Atomo Projekt s.r.o.</h4>
+		<p style="margin-left: 30px">
+			Za opískování hliníkových dílů.
+		</p>
+		
+		<h4>Organizaci JCMM a Jihomoravskému kraji</h4>
+		<p style="margin-left: 30px">
+			Na závěr bych chtěl poděkovat za finanční podporu Jihomoravskému centru pro mezinárodní mobilitu a Jihomoravskému kraji, bez kterých by tato práce nemohla vzniknout.
+		</p>
+		
+		
+		
+		<hr>
+		<h3 id="links">Zajímavé odkazy</h3>
+		<p>
+		Zde bych chtěl uvést několik odkazů na zajímavé projekty mích přátel, které stojí za zhlédnutí.
+		</p>
+
+		<h4>Apikace Lorris Toolbox</h4>
+		<p style="margin-left: 30px">
+			Perfektní aplikace určená pro programátory a vývojáře. 
+		</p>
+		<p style="margin-left: 30px">
+			Lorris je soubor nástrojů, které pomáhájí při vývoji robotů, embedded zařízení a všeho ostatního co posílá a přijmá data. Aplikace Lorris pro PC obsahuje následující nástroje: grafický analyzér dat, terminál, TCP proxy a uživatelské rozhraní pro programátory.			
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://tasssadar.github.io/Lorris/cz/index.html">http://tasssadar.github.io/Lorris/</a>
+		</p>
+		
+		<h4>Mobilní aplikace Lorris mobile</h4>
+		<p style="margin-left: 30px">
+			Tato Android aplikace je "přenosný doplněk" k PC aplikaci Lorris Toolbox - nemusí mít nutně všechny funkce PC aplikace, ale měla by stačit pokud chcete pouze rychle přečíst nějaké debug informace z vašeho robota nebo mikrokontroléru. 
+		</p>
+		<p style="margin-left: 30px">
+			<a href="https://play.google.com/store/apps/details?id=com.tassadar.lorrismobile">Google Play</a>
+		</p>
+		
+		<h4>Vojta Boček</h4>
+		<p style="margin-left: 30px">
+			Programátor z Brna vyvíjející mnoho zajímavých projektů ať již v oblasti robotiky (<a href="http://tasssadar.github.io/Lorris/cz/index.html">Lorris Toolbox</a>) tak i v oblastí Linuxu (<a href="http://forum.xda-developers.com/showthread.php?t=2011403">MultiROM</a>) a Android aplikací (<a href="https://play.google.com/store/apps/details?id=com.tassadar.lorrismobile">Lorris mobile</a>). 
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://tasssadar.github.io/">Osobní webové stránky</a>	
+		</p>
+		<p style="margin-left: 30px">
+			<a href="https://github.com/Tasssadar">GitHub profil</a>
+		</p>
+		
+		<h4>Knihovny Avrlib</h4>
+		<p style="margin-left: 30px">
+			Knihovna pro obsluhu a lepší práci s mikrokontroléry ATmega a ATXmega.
+		</p>
+		<p style="margin-left: 30px">
+			Obsahuje obsluhu jednotlivých periferií od komunikace, přes časovače až po správu EEPROM.
+		</p>
+		<p style="margin-left: 30px">
+			<a href="https://technika.junior.cz/hg/avrlib">https://technika.junior.cz/hg/avrlib</a>
+		</p>
+		
+		<h4>Online XBoot bootloader generátor</h4>
+		<p style="margin-left: 30px">
+			Online gererátor bootloaderu pro čipy ATXmega založený na projektu <a href="http://alexforencich.com/wiki/en/xboot/">XBoot</a>.
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://technika.junior.cz/xboot/">http://technika.junior.cz/xboot/</a>
+		</p>
+		
+		<h4>Online generátor bootloaderu pro ATmegy</h4>
+		<p style="margin-left: 30px">
+			Online gererátor bootloaderu ovládaných přes USART pro čipy ATmega. Jejich obsluha je vyřešená v knihovnách <a href="https://technika.junior.cz/hg/avrlib">Avrlib</a>.
+		</p>
+		<p style="margin-left: 30px">
+			<a href="http://technika.junior.cz/~avakar/avr232boot/">http://technika.junior.cz/~avakar/avr232boot/</a>
+		</p>
+		
+		
+
+        <div align="center">
+            <small>Tahle stránka používá <a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a></small>
+        </div>
+    </div> <!-- /container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
   </body>
 </html>
