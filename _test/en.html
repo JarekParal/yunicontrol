@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>YuniControl - Univerzální řídící pult</title>
+	<title>YuniControl - Universal remote control</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -55,18 +55,25 @@
 		<nav id="nav" class="navbar nav-transparent fixed-nav">
 			<div class="container">
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a style="cursor: pointer;" href="#about">O projektu</a></li>
-					<li><a style="cursor: pointer;" href="#construction">Konstrukce</a></li>
-					<li><a style="cursor: pointer;" href="#electronics">Elektronika</a></li>
+					<li><a style="cursor: pointer;" href="#about">About project</a></li>
+					<li><a style="cursor: pointer;" href="#construction">Construction</a></li>
+					<li><a style="cursor: pointer;" href="#electronics">Electronics</a></li>
 					<li><a style="cursor: pointer;" href="#software">Software</a></li>
-					<li><a style="cursor: pointer;" href="#benefits">Výhody</a></li>
-					<li><a style="cursor: pointer;" href="#utilize">Využití</a></li>
+					<li><a style="cursor: pointer;" href="#production">Production</a></li>
+					<li><a style="cursor: pointer;" href="#benefits">Advantages</a></li>
+					<li><a style="cursor: pointer;" href="#utilize">Utilize</a></li>
+					<li><a style="cursor: pointer;" href="#future_plans">Future plans</a></li>
+					<li><a style="cursor: pointer;" href="#conclusion">Conclusion</a></li>
+					<!--
 					<li><a style="cursor: pointer;" href="#contribution">Přínosy</a></li>
 					<li><a style="cursor: pointer;" href="#competitions">Soutěže</a></li>
-					<li><a style="cursor: pointer;" href="#aboutme">O mně</a></li>
+					-->
+					<li><a style="cursor: pointer;" href="#aboutme">About me</a></li>
+					<!--
 					<li><a style="cursor: pointer;" href="#thanks">Poděkování</a></li>
 					<li><a style="cursor: pointer;" href="#links">Zajímavé odkazy</a></li>
-					<li><a href="en.html"> <span class="lang-sm lang-lbl" lang="en"></span></a></li>
+					-->
+					<li><a href="index.html"> <span class="lang-sm lang-lbl" lang="cs"></span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -76,11 +83,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h1>YuniControl - Univerzální řídící pult</h1>
+					<h1>YuniControl - Universal remote control</h1>
 				</div>
-				<p>Autor: Jaroslav Páral (<a href="mailto:paral.jarek@gmail.com">paral.jarek@gmail.com</a>)</p>
+				<p>Author: Jaroslav Páral (<a href="mailto:paral.jarek@gmail.com">paral.jarek@gmail.com</a>)</p>
 
-				<p>Cílem této práce bylo vytvořit univerzální dálkový ovládací pult, který se od běžně dostupných ovladačů liší tím, že umožňuje uživateli rozmístit si libovolně a v téměř neomezeném množství ovládací prvky.
+				<p>
+				The goal of this work is to create universal remote controller which, unlike conventional controllers, can be arbitrarily re-arranged by the user.
 				</p>
 
 				<div class="row">
@@ -89,15 +97,15 @@
 							<img src="img/empty.gif" data-src="preview/console_with_filling_1.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Pult v základním rozložením ovládacích prvků - s výplní.
+							Remote control in the base setup - with filling. 
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-6">
 						<a class="lightbox" href="img/console_with_filling_1.jpg">
 							<img src="img/empty.gif" data-src="preview/console_without_filling_1.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
-						<figcaption class="figure-caption">
-							Pult v základním rozložením ovládacích prvků - bez výplně.
+						<figcaption class="figure-caption">							
+							Remote control in the base setup - without filling.
 						</figcaption>
 					</figure>
 				</div>
@@ -109,42 +117,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">O projektu</h2>
+					<h2 class="title">About project</h2>
 				</div>
-
 				<p>
-					Řadu let se věnuji modelářství a robotice. Během této doby jsem se mnohokrát dostal do situace, kde mi běžný ovladač nestačil, kdy byl k ničemu nebo kdy jeho používání bylo velmi komplikované.
+					The goal of this work is to create a multi-purpose remote control console. Unique feature of this console is the possibility for user to place any and almost unlimited amount of operating elements (from range of standard, premade modules) wherever he needs to and in any layout he wants.
 				</p>
 				<p>
-					Účastnil jsem se týmových vývojů několika robotických zařízení, která byla určena pro vykonávání speciálních úkolů, a pro tyto oblasti běžný ovladač nedostačoval. <br>
-					Proto jsem se rozhodl, že vyrobím vlastní univerzální ovládací pult, který bude splňovat moje požadavky.
+					The remote control is suitable for testing different methods of controls arrangement. It is also able to create a purely new control interfaces which have never been made by anybody. Console is especially useful for applications where usual remote control is not enough, for example when the driver needs greater amount of control elements and/or needs some special arrangement of said elements.
 				</p>
-				<p>
-					K finálnímu řešení jsem došel po vytvoření několika variant a návrhů. Tyto návrhy jsem konzultoval s lidmi, kteří měli podobné problémy jako já. Za nejvhodnější variantu jsem zvolil variabilní konstrukci, která se skládá z různých ovládacích modulů.
-				</p>
-				<p>
-					Nyní mám ovládací pult, do kterého mohu umístit ovládací prvky typu křížový ovladač, potenciometry, přepínače, tlačítka nebo letecký joystick a vytvořit si ovladač podle potřeb. Když bych potřeboval nové ovládací prvky, tak si je mohu vyrobit a snadno přidat.
-				</p>
-				<p>
-					Tento pult lze využít k ovládání robotů, modelů letadel, lodí, dopravní techniky nebo stavebních strojů. 
-				</p>
-				<p>
-					Navíc koncept ovladače vyvinutého při této práci může sloužit pro zakázkovou výrobu ovladačů určených uživatelům s velmi specifickými požadavky.
-				</p>
-				<p>
-					Hlavním přínosem mé práce je, že jsem vytvořil jedinečný ovladač s velkými možnostmi úprav, který umožňuje vyzkoušet si různá uspořádání ovládacích prvků, přidat nové funkce nebo provést studii, ve které porovnám možnosti jednotlivých ovladačů, například kniplu, leteckého joysticku nebo gamepadu.
-				</p>
-				<p>
-					Dalším využitím této práce je možnost použít univerzální ovládací pult pro nalezení optimálního řešení uspořádání ovládacích prvků a následně k individuální výrobě ovladače podle přání zákazníka.
-				</p>
-
+				
 				<div class="row">
 					<figure class="figure col-md-4">
 						<a class="lightbox" href="img/console_center_center.jpg">
 							<img src="img/empty.gif" data-src="preview/console_center_center.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Pult s mobilním telefonem ve středu.
+							Remote control with smartphone as the main control elements in center.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-4">
@@ -152,7 +140,7 @@
 							<img src="img/empty.gif" data-src="preview/console_joystick.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Pult s joystickem a držáky na popruhy.
+							Remote control with joystick and strap holder.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-4">
@@ -160,7 +148,7 @@
 							<img src="img/empty.gif" data-src="preview/console_with_filling_1.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Pult v základním rozložením.
+							Remote control in base setup.
 						</figcaption>
 					</figure>
 				</div>
@@ -172,31 +160,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">Konstrukce</h2>
+					<h2 class="title">Construction</h2>
 				</div>
 				<p>
-					Ovladač se skládá z pultu a jednotlivých ovládacích modulů. Moduly jsou upevněny pomocí magnetů v pultu a jejich poloha je zajištěna technickou pěnou, která také kryje elektroniky.
+					The controller consists of main panel and individual control modules. 
 				</p>
-				<h4>Pult</h4>
-				<p style="margin-left: 30px">
-					Pult slouží jako nosná konstrukce pro všechny moduly. Modulem mohou být všechny ovládací prvky od křížových ovladačů, přes přepínače až po potenciometry. Ale také se může jednat o modul s 2,4 GHz vysílačem, informačním reproduktorem, stavovým displejem, smartphonem, správou napájení nebo GPS či bluetooth čipem.
+				<p>
+					The modules are made of Dural, bent to U-shape and a galvanized metal plate is inserted to the bottom of the module. The metal plate is used for mounting of the modules with neodymium magnets. </br>
+					These magnets hold modules in the main panel.
 				</p>
-				<p style="margin-left: 30px"> 
-					Pult je vyroben z překližky o tloušťce 6 mm. Vnější rozměry pultu jsou přibližně 410 x 250 mm. Výška je cca. 50 mm. Uvnitř je umístěn pozinkový plech o rozměrech 400 x 240 mm. Veškeré moduly se připevňují k tomuto plechu.
+				<p>   
+					There are four basic modules:
+					<ul style="margin-left: 30px">
+						<li style="padding: 2px">switch or potentiometer</li>
+						<li style="padding: 2px">joystick</li>
+						<li style="padding: 2px">2,4 GHz transmitter module</li>
+						<li style="padding: 2px">smart-phone</li>
+					</ul>
 				</p>
-				<p style="margin-left: 30px">
-					Do nevyplněného prostoru se umísťují výplně vyrobené z tvrdé technické pěny o výšce 20 mm. Jejich rozměry jsou různé. Mohu je pokládat na spojovací kolíčky a tím zakrýt elektroniku a zároveň vytvořit pěkný a pohodlný povrch ovladače.
+				<p>
+					The individual modules are connected together using wooden pins of various lengths so that they are in a fixed position and the pins also hold foam filling, which covers electronics and cables.
 				</p>
-		
-				<h4>Moduly</h4>
-				<p style="margin-left: 30px">
-					Momentálně jsou vyrobeny moduly pro ovládání (moduly s křížovými ovladači, přepínači a potenciometry) a také pro smartphone a pro 2,4 GHz modelářský vysílač (Jeti Duplex).
+				<p>
+					Main panel is made of 6 mm thick plywood. External dimensions are approximately 410 x 250 mm. Height is 50 mm. Inside the panel is a galvanized metal plate. All modules are fixed to the plate with magnets.
 				</p>
-				<p style="margin-left: 30px">
-					Všechny moduly jsou vyrobeny z hliníku o tloušťce 2,5 mm. Výška každého modulu je 41 mm. Jsou přichyceny pomocí neodymových magnetů k pozinkovému plechu, který je umístěn na dně ovládacího pultu. Každý modul obsahuje několik speciálních zámků, sloužících ke spojování modulů mezi sebou a zároveň k držení zakrývací výplně.
-				</p>
-				<p style="margin-left: 30px">
-					Jednotlivé moduly jsou spolu spojeny (svázány) pomocí různě dlouhých dřevěných kolíčků a speciálních zámků na modulech.
+				<p>
+					Thanks to this construction, the user can place modules to any position he wants.
 				</p>
 
 				<div class="row">
@@ -205,7 +194,7 @@
 							<img src="img/empty.gif" data-src="preview/moduls.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Základní moduly (z leva): pro smartphone, křížový ovladač, 2,4 GHz modelářský vysílač, přepínač nebo potenciometr.
+							Basic modules (from left): for smartphone, joystick, 2,4 GHz transmitter module, switch or potentiometer.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-6">
@@ -213,7 +202,7 @@
 							<img src="img/empty.gif" data-src="preview/modul_smartphone.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Detail modulu pro smartphone.
+							Detail of module for smartphone.
 						</figcaption>
 					</figure>
 				</div>
@@ -223,7 +212,7 @@
 							<img src="img/empty.gif" data-src="preview/knipl.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Modul pro křížový ovladač - již osazen.
+							Module for joystick - already fitted.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-6">
@@ -231,7 +220,7 @@
 							<img src="img/empty.gif" data-src="preview/modul_knipl.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Modul pro křížový ovladač - před osazením.
+							Module for joystick - before mounting.
 						</figcaption>
 					</figure>
 				</div>
@@ -241,7 +230,7 @@
 							<img src="img/empty.gif" data-src="preview/2,4ghz_modul.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Modul 2,4 GHz modelářský vysílač.
+							Module 2,4 GHz transmitter module.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-4">
@@ -249,7 +238,7 @@
 							<img src="img/empty.gif" data-src="preview/modul_switch.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Modul pro přepínač.
+							Module for switch.
 						</figcaption>
 					</figure>
 					<figure class="figure col-md-4">
@@ -257,7 +246,7 @@
 							<img src="img/empty.gif" data-src="preview/modul_pot.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 						</a>
 						<figcaption class="figure-caption">
-							Modul pro potenciometr.
+							Module for potentiometer.
 						</figcaption>
 					</figure>
 				</div>
@@ -269,22 +258,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">Elektronika</h2>
+					<h2 class="title">Electronics</h2>
 				</div>
 			</div>
 			<p>
-				Do ovladače jsem si vytvořil vlastní elektroniku. Díky tomu mohu snímat hodnoty ze všech ovládacích prvků, komunikovat s dalšími zařízeními, upravovat a modifikovat program podle potřeby a zároveň mít nad vším plnou kontrolu.
+				I've created all the electronics in the controller myself.
 			</p>
 			<p>
-				Elektroniku  si můžete stáhnout z repozitáře: <a href="https://bitbucket.org/YuniControl/yunicontrol_xmega32a4u_board">yunicontrol_xmega32a4u_board</a>.
+				This allows me to get values from all control elements, communicate with other devices, edit controller's firmware and so on.
 			</p>
-			<h4>Popis</h4>
-			<p style="margin-left: 30px">
-				Srdcem celého ovladače je řídící deska postavená na nové architektuře firmy Atmel. Jedná se o platformu <a href="http://www.atmel.com/products/microcontrollers/avr/avr_xmega.aspx">AVR Xmega</a>, která je nástupcem starší rodiny ATMega. 
+			<p>
+				The board features a micro-USB connector. This connector can be used for uploading new version of firmware to the board or it can be used by the MCU for communication with PC.
 			</p>
-			<p style="margin-left: 30px">	
-				Konkrétně se jedná o čip <a href="http://www.atmel.com/devices/ATXMEGA32A4U.aspx">ATxmega32A4U</a>.
-				 <ul style="margin-left: 50px">
+			<p>
+				The board is based on <a href="http://www.atmel.com/devices/ATXMEGA32A4U.aspx">ATxmega32A4U</a> by Atmel:
+				<ul style="margin-left: 30px">
 					<li style="padding: 2px">8/16-bit AVR XMEGA A4U Microcontroller</li>
 					<li style="padding: 2px">32KB Flash</li>
 					<li style="padding: 2px">44-pin</li>
@@ -292,12 +280,11 @@
 					<li style="padding: 2px">USB Full-speed Device</li>
 				</ul>
 			</p>
-	
-			<p style="margin-left: 30px">	
-				Řídící deska je vyvinuta tak, aby zastala základní funkce zcela samostatně. K jednoduchému řízení letadla či robota stačí jen tato deska. Až v případě, že by měl uživatel zájem o další funkce, může přidávat další tyto desky a vzájemně je propojovat. 
+			<p>
+				The board can handle basic number of control modules. However, if user demands greater number of control modules, you can easily add another control board and connect them together.
 			</p>
-			<p style="margin-left: 30px">	
-				Deska obsahuje micro-USB konektor, díky kterému je možné nahrávat nové verze softwaru bez jakéhokoliv programátoru a zároveň umožňuje komunikaci mezi PC a deskou pro případné předávaní dat a nastavování.
+			<p>
+				All schemes and plans for the electronics are available <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commont Attribution 3.0 Unported</a> license here: <a href="https://bitbucket.org/YuniControl/yunicontrol_xmega32a4u_board">yunicontrol_xmega32a4u_board</a>.
 			</p>
 			
 			<div class="row">
@@ -306,7 +293,7 @@
 						<img src="img/empty.gif" data-src="preview/electronics/motherboard_with_coint.jpg" class="figure-img img-fluid lazy img-responsive" alt="">
 					</a>
 					<figcaption class="figure-caption">
-						Plně osazená řídící deska.
+						Photo of the complete mainboard.
 					</figcaption>
 				</figure>
 			</div>
@@ -316,16 +303,10 @@
 						<img src="img/empty.gif" data-src="preview/electronics/motherboard_schema.png" class="figure-img img-fluid lazy img-responsive" alt="">
 					</a>
 					<figcaption class="figure-caption">
-						Schema zapojení řídící desky.
+						Schema of the mainboard.
 					</figcaption>
 				</figure>
 			</div>
-		
-			<h4>Licence</h4>
-			<p style="margin-left: 30px">	
-				Elektronika je volně k dispozici pod licencí <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commont Attribution 3.0 Unported</a>. 
-			</p>
-
 		</div>
 	</div>
 
@@ -337,68 +318,66 @@
 				</div>
 			</div>
 			<p>
-				V řídící desce YuniControl mám vlastní software (viz popis níže). K dispozici je i aplikace od <a href="http://tasssadar.github.io/">Vojty Bočka</a> na Android, která momentálně umožňuje zobrazování dat z elektroniky.
-			</p>
-			<h4>Řídící deska YuniControl</h4>
-			<p style="margin-left: 30px">
-				Software je psán v prostředí <a href="http://www.atmel.com/microsite/atmel_studio6/">Atmel Studio 6</a>. K obsluze používám knihovny <a href="https://github.com/RoboticsBrno/avrlib">avrlib</a>.
-			</p>
-			<p style="margin-left: 30px">
-				Aktuální uveřejněnou verzi softwaru naleznete v tomto repozitáři: <a href="https://technika.junior.cz/trac/browser/yunicontrol_xmega32a4u_firmware">yunicontrol_xmega32a4u_firmware</a>.
+				Controller uses my own software.
 			</p>
 			
+			<h4>Motherboard YuniControl</h4>
 			<p style="margin-left: 30px">
-				Současně k software vyvíjím knihovny pro lepší, jednodušší a pochopitelnější práci s řídící deskou: <a href="https://jarekp@bitbucket.org/YuniControl/yunicontrol_lib">yunicontrol_lib</a>.
-			</p>
-					
+				Source code of the firmware can downloaded from this repository: <a href="https://technika.junior.cz/trac/browser/yunicontrol_xmega32a4u_firmware">yunicontrol_xmega32a4u_firmware</a>.
+			</p>				
 			<p style="margin-left: 30px">	
-				Momentálně software zvládá tyto úlohy:</a>.
-				<ul style="margin-left: 50px">
-					<li style="padding: 2px">snímání polohy potenciometrů (křížových ovladačů), přepínačů a tlačítek</li>
-					<li style="padding: 2px">komunikace po sériové lince</li>
-					<li style="padding: 2px">obsluhu Bluetooth modulů ConnectBlue</li>
-					<li style="padding: 2px">odesílání dat do mobilní aplikace Lorris mobile</li>
-					<li style="padding: 2px">vytváření PPM signálu</li>
+				Software features these functions:</a>.
+					<ul style="margin-left: 50px">
+					<li style="padding: 2px">getting position of potentiometers (joystick), switches and button</li>
+					<li style="padding: 2px">communication via serial line UART </li>
+					<li style="padding: 2px">control of a Bluetooth module</li>
+					<li style="padding: 2px">transmission of data to the mobile application Lorris</li>
+					<li style="padding: 2px">generation signal for the model's transmitter</li>
+				</ul>
+			</p>
+			<p style="margin-left: 30px">	
+				Features currently in development:
+					<ul style="margin-left: 50px">
+					<li style="padding: 2px">automatic calibration of the control elements</li>
+					<li style="padding: 2px">changing settings from the mobile application</li>
+					<li style="padding: 2px">controlling electronics via PC application</li>
 				</ul>
 			</p>
 			
-			<p style="margin-left: 30px">	
-				Ve vývoji jsou další funkce:</a>.
-				<ul style="margin-left: 50px">
-					<li style="padding: 2px">automatická kalibrace polohy potenciometrů (kvůli křížovým ovladačům)</li>
-					<li style="padding: 2px">nastavování Bluetooth modulů z aplikace Lorris mobile</li>
-					<li style="padding: 2px">obsluha elektroniky pomocí PC aplikace</li>
-				</ul>
+			<h4>Android application</h4>
+			<p style="margin-left: 30px">            
+				A module for this project exists in an Android application <a href="https://play.google.com/store/apps/details?id=com.tassadar.lorrismobile">Lorris mobile</a> (available on Google Play store), developed by <a href="http://tasssadar.github.io/">Vojtěch Boček</a>. The module shows basic info from the electronics and can manage some of the controller's functions.
 			</p>
-					
-			</p>
-			<h4>Android aplikace</h4>
-			<p style="margin-left: 30px">
-				Aplikaci pro mobilní telefony s operačním systémem Android mi vytvořil Vojta Boček. Jedná se spíše o modul do aplikace <a href="https://play.google.com/store/apps/details?id=com.tassadar.lorrismobile">Lorris mobile</a> což je soubor nástrojů, které pomáhají při vývoji robotů, embedded zařízení a všeho ostatního co posílá a přijímá data. 
-			</p>
-			<p style="margin-left: 30px">
-				Modul YuniControl v aplikaci Lorris mobile zvládá tyto úlohy:
-				<ul style="margin-left: 50px">
-					<li style="padding: 2px">zobrazování polohy/pozice jednotlivých ovládacích prvků (potenciometrů, tlačítek, přepínačů)</li>
-					<li style="padding: 2px">informovat o napájecím napětí</li>
-					<li style="padding: 2px">spouštět kalibrační mód v řídící elektronice</li>
-				</ul>
-			</p>
-			<p style="margin-left: 30px">
-				Další funkce by měli časem přibývat.
-			</p>
-
+				
 			<div class="row">
-
 				<figure class="figure col-md-12">
 					<a class="lightbox" href="img/software/lorris-yunicontrol_2.png">
 						<img src="img/empty.gif" data-src="preview/software/lorris-yunicontrol_2.png" class="figure-img img-fluid lazy img-responsive" alt="">
 					</a>
 					<figcaption class="figure-caption">
-						Ukázka modulu YuniControl v Android aplikaci Lorris mobile.
+						Example of the YuniControl module in Android application Lorris mobile.
 					</figcaption>
 				</figure>
 			</div>
+		</div>
+	</div>
+
+	<div id="production" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2 class="title">Production</h2>
+				</div>
+			</div>
+			<p>
+				Most parts were designed to allow the industrial production.
+			</p>
+			<p>
+				For example, the control modules were cut with a water jet from aluminum plate and bent with NC benders. Technical foam serving as filler was also cut with a water jet.
+			</p>
+			<p>
+				To simplify the construction, the panel was made of plywood, a material very suitable for this purpose.
+			</p>
 		</div>
 	</div>
 
@@ -406,14 +385,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">Výhody</h2>
+					<h2 class="title">Advantages</h2>
 				</div>
 			</div>
 			<p>
-				Hlavní předností univerzálního ovládacího pultu, která jej zcela odlišuje od běžných dálkových ovladačů, je možnost skládat do něj jednotlivé ovládací moduly ve stylu stavebnice Lego.
+				The main advantage of this control compared to the conventional remote control is the ability to compose individual control modules in the Lego style.
 			</p>
 			<p>
-				Jednoduše je tedy možné vzít ovládací prvek (typu tlačítko, přepínač nebo pákový ovladač) a umístit ho podle potřeby kamkoliv a vytvořit si tak ovladač přesně na míru, například pro složitý model trolejbusu.
+				To put it simply, the user can take a control module (a button, switch or a joystick) and place it anywhere he needs and create controller specifically to suit his needs.
 			</p>
 		</div>
 	</div>
@@ -422,36 +401,69 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">Využití</h2>
+					<h2 class="title">Real-world use</h2>
 				</div>
 			</div>
 			<p>
-			Pult je vhodný pro testování různých způsobů uspořádání ovladačů a umožňuje vytváření zcela nových ovládacích zařízení, která zatím nikdo nevyrábí.
+				My controller is great for testing many different control elements layouts and can even be used to create new types of controllers nobody is making yet.
 			</p>
 			<p>
-			Zvlášť vhodný je pro aplikace, kde je pro uživatele nezbytné mít k dispozici větší množství ovládacích prvků a tyto ovládací prvky mít speciálně rozmístěny, například kvůli přesnému a rychlému ovládání
+				It can also handle many types of special devices, where usual controllers are not versatile enough. 
 			</p>
-					
+			
+			<p>	
+				The controller can be used to control:
+					<ul style="margin-left: 30px">
+					<li style="padding: 2px">model airplanes, ships, construction machinery</li>
+					<li style="padding: 2px">robotic devices</li>
+					<li style="padding: 2px">manipulators</li>
+					<li style="padding: 2px">drones with a recording device</li>
+				</ul>
+			</p>
 		</div>
 	</div>	
 
-	<div id="contribution" class="section">
+	<div id="future_plans" class="section">
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">Přínosy</h2>
+					<h2 class="title">Future plans</h2>
 				</div>
 			</div>
 			<p>
-				Neexistuje běžně dostupné zařízení, které by umožňovalo něco podobného jako tento ovladač.  
+				<ul>
+					<li style="padding: 2px">model airplanes, ships, construction machinery</li>
+					<li style="padding: 2px">robotic devices</li>
+					<li style="padding: 2px">manipulators</li>
+					<li style="padding: 2px">drones with a recording device</li>
+				</ul>
+			</p>
+		</div>
+	</div>	
+
+	<div id="conclusion" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2 class="title">Conclusion</h2>
+				</div>
+			</div>
+			<p>	
+				Controller's main features:
+				<ul style="margin-left: 30px">
+					<li style="padding: 2px">ability to rearrange controls</li>
+					<li style="padding: 2px">add or remove any element</li>
+					<li style="padding: 2px">quick and simple testing of new layouts</li>
+					<li style="padding: 2px">controlling of specific equipment</li>
+				</ul>
 			</p>
 			<p>
-				Koncept ovladače vyvinutého při této práci by měl sloužit pro zakázkovou výrobu ovladačů určených uživatelům s velmi specifickými požadavky.
-			</p>	
+				There’s no other device that would give you the same variability like this driver as far as I know.
+			</p>
 		</div>
-	</div>
+	</div>	
 
-
+	<!--
 	<div id="competitions" class="section">
 		<div class="container">
 			<div class="row">
@@ -559,21 +571,26 @@
 			
 		</div>
 	</div>
-
+	-->
+	
 	<div id="aboutme" class="section">
 		<div class="container">
 			<div class="row">
 				<div class="section-header">
-					<h2 class="title">O mně</h2>
+					<h2 class="title">About me</h2>
 				</div>
 
 				<div class="row">
 					<figure class="figure col-md-9">
-						Jsem student 4. ročníků technického lycea se zaměřením na elektrotechniku na <a href="http://www.spssbrno.cz">SPŠ a VOŠ Brno, Sokolská</a>. 
-						Technice se věnuji již od dětství, ale k robotice jsem se dostal až na střední škole. 
-						Od té doby jsem jí ale propadl a věnují jí velkou část mého života. 
-						I díky této práci se mi podařilo vyhrát několik robotických soutěží (Eurobot Starter 2011, Bear Rescue Beginner 2012 a 2013, Mikrokontroléry letí 2012).
-						Aktuálně se chci zaměřit více do informatické/softwarové oblasti robotiky a předávání mých zkušenostní mladším v rámci výuky na pobočce <a href="http://robotarna.cz">Robotárna (pobočka DDM Helceletova, Brno)</a>.
+						<p>
+							I am a student of the 4. class technical lyceum with focus on electronics at <a href="http://www.spssbrno.cz">SPŠ a VOŠ Brno, Sokolská</a>. 
+							I have been involved in technology since my childhood, but to robotics I got in secondary school.
+							But since then devoted its much of my free time.
+						</p>
+						<p>
+							Thank this work I won a few robotics competitions  (Eurobot Starter 2011, Bear Rescue Beginner 2012 a 2013, Mikrokontroléry letí 2012).
+							Now I want to focus more to informatics/software in robotics and also trensferring my experience to younger in lectures on <a href="http://robotarna.cz">Robotárna (departure of Youth Centre Helceletova, Brno)</a>.
+						</p>
 					</figure>
 					<figure class="figure col-md-3">
 						<a class="lightbox" href="img/me.jpg">
@@ -585,6 +602,20 @@
 		</div>
 	</div>
 
+	<div id="thanks" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="section-header">
+						<h2 class="title">Thanks</h2>
+					</div>
+				</div>
+				<p>
+					This work was developed with financial support from the <a href="www.kr-jihomoravsky.cz">South Moravian Region</a> and <a href="www.jcmm.cz">South Moravian Centre for International Mobility</a>. 
+				</p>
+			</div>
+		</div>	
+
+	<!--
 	<div id="thanks" class="section">
 		<div class="container">
 			<div class="row">
@@ -735,6 +766,7 @@
 			</div>
 		</div>
 	</div>
+	-->
 
 	<footer id="footer" class="sm-padding bg-dark">
 		<div class="container">

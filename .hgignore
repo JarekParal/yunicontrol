@@ -1,0 +1,2 @@
+syntax: glob
+_test/node_modules/
