@@ -1,2 +1,2 @@
 syntax: glob
-_test/node_modules/
+node_modules/
